@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 
 <head>
-	<title>Q绑查询工具</title>
+	<title>璀璨Q绑查询工具</title>
 	<link rel="shortcut icon" href="http://8zyw.cn/favicon.ico" type="image/x-icon">
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
@@ -269,8 +269,8 @@
 			</div>
 			<div class="content">
 				<div class="inner">
-					<h1>Q绑查询网</h1>
-					<p>欢迎来到蛋黄教育查询第四套模板！</p>
+					<h1>璀璨Q绑查询网</h1>
+					<p>欢迎来到璀璨查询网站！</p>
 				</div>
 			</div>
 			<nav class="use-middle">
@@ -321,7 +321,7 @@ glyphicon glyphicon-phone"></span>密保手机号码</span>
 
 		<!-- Footer -->
 		<footer id="footer">
-			<p class="copyright">©&nbsp;2020&nbsp;&nbsp;蛋黄教育 - 泄露信息在线查询</p>
+			<p class="copyright">©&nbsp;2020&nbsp;&nbsp;璀璨 - 泄露信息在线查询</p>
 		</footer>
 	</div>
 
@@ -331,7 +331,7 @@ glyphicon glyphicon-phone"></span>密保手机号码</span>
 	<!-- Scripts -->
 	<script>
 		function gg() {
-			layer.alert('<b style="color:#ff4425">欢迎来到蛋黄教育第四套查询模板！</b>', {
+			layer.alert('<b style="color:#ff4425">欢迎来到璀璨查询网站！</b>', {
 				icon: 1,
 				title: '公告',
 				skin: 'layer-ext-moon'
@@ -340,9 +340,9 @@ glyphicon glyphicon-phone"></span>密保手机号码</span>
 		function qbang() {
 			var qq = $('#input').val();
 			if (qq == '') {
-				var alert_1 = layer.msg('<b style="color:#ff4425">蛋黄教育提醒您：请输入QQ</b>', { icon: 5 });
+				var alert_1 = layer.msg('<b style="color:#ff4425">璀璨提醒您：请输入QQ</b>', { icon: 5 });
 			} else {
-				layer.confirm('<b style="color:#ff4425">仅供查询自己的QQ号码，不是自己的请立即退出本页面，否则发生的一切后果站长不负责</b>', {
+				layer.confirm('<b style="color:#ff4425">仅供查询自己的QQ号码，不是自己的请立即退出本页面，否则发生的一切后果璀璨站长不负责</b>', {
 					btn: ['确认', '取消'] //按钮
 				}, function () {
 					layer.close(layer.index);
@@ -352,7 +352,7 @@ glyphicon glyphicon-phone"></span>密保手机号码</span>
 					$.getJSON($url, function (json) {
 						layer.close(alert_1);
 						if (json['code'] == 200 && json['msg'] == 'ok') {
-							layer.msg('<b style="color:#ff4425">蛋黄教育提醒您：查询成功</b>', { icon: 1 });
+							layer.msg('<b style="color:#ff4425">璀璨提醒您：查询成功</b>', { icon: 1 });
 							$('#mobile').val(json['data']['mobile']);
 							$('#jiexi_data').css("display", "block");
 						} else {
